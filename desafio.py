@@ -16,7 +16,7 @@ while True:
     opcao = input(menu).lower()
 
     if opcao == 'd':
-        print('='.center(200, '=')) # centraliza o texto
+        print('='.center(20, '='))
         print('Depósito'.center(20))
         valor = input('Digite o valor do depósito: ')
         if not valor.isnumeric():
@@ -29,7 +29,7 @@ while True:
             extrato.append(f'Deposito -> valor: R${valor:.2f}')
     
     elif opcao == 's':
-        print('====================')
+        print('='.center(20, '='))
         print('Saque'.center(20))
         if numero_saques < LIMITE_SAQUES:  
             valor = float(input('Digite o valor do saque: '))
@@ -46,7 +46,7 @@ while True:
             print('Limite de saques diários atingido')
             
     elif opcao == 'e':
-        print('====================')
+        print('='.center(20, '='))
         print('Extrato'.center(20))
         for item in extrato:
             print(item)
