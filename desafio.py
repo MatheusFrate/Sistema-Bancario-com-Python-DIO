@@ -203,10 +203,8 @@ class Deposito(Transacao):
         conta.historico.adicionar_transacao(self)
 
 class Menu:
-    clientes = [PessoaFisica('João', '01/01/1990', '1', 'Rua A')]
-    contas = [
-        ContaCorrente(1, clientes[0])
-    ]
+    clientes = []
+    contas = []
     clientes[0].adicionar_conta(contas[0])
     proxima_conta = 1
     def menu(self):
